@@ -1,0 +1,59 @@
+<div class="container">
+    <div class="row">
+      <div class="col-sm-11 col-md-9 col-lg-7 mx-auto">
+        <div class="card card-signin my-5">
+          <div class="card-body">
+            <h5 class="card-title text-center">Sign Up</h5>
+            <form class="form-signin" #myform="ngForm" (ngSubmit)="login(myform)">
+                <div class="form-label-group form-group">
+                    <input type="text" id="name" name="name" class="form-control" 
+                     placeholder="Name"
+                     [(ngModel)]="name"
+                     #loginName="ngModel"
+                     [ngClass]="{'is-invalid':loginName.errors && loginName.touched}"
+                     required                     
+                     >
+                    <label for="name">Name</label>      
+                    <div [hidden]="!loginName.errors?.required" class="invalid-feedback">Name Required</div>
+                  </div>
+
+
+              <div class="form-label-group form-group">
+                <input type="email" id="email" name="email" class="form-control" 
+                 placeholder="Email address"
+                 [(ngModel)]="email"
+                 #loginEmail="ngModel"
+                 [ngClass]="{'is-invalid':loginEmail.errors && loginEmail.touched}"
+                 required
+                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                 >
+                <label for="email">Email address</label>
+  
+                <div [hidden]="!loginEmail.errors?.required" class="invalid-feedback">Email Required</div>
+                <div [hidden]="!loginEmail.errors?.pattern" class="invalid-feedback">Email Invalid</div>
+              </div>
+  
+              <div class="form-label-group form-group">
+                <input type="password" id="inputPassword" name="inputPassword" class="form-control" placeholder="Password"
+                [(ngModel)]="inputPassword"
+                #loginPassword="ngModel"
+                [ngClass]="{'is-invalid':loginPassword.errors && loginPassword.touched}"
+                minlength="6"
+                required>
+                <label for="inputPassword">Password</label>
+  
+                <div [hidden]="!loginPassword.errors?.required" class="invalid-feedback">Password Required</div>
+                <div [hidden]="!loginPassword.errors?.minlength" class="invalid-feedback">Password minimum 6 character</div>
+              </div>
+  
+              <div class="custom-control custom-checkbox mb-3">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">Remember password</label>
+              </div>
+              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Submit</button>
+              </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

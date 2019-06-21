@@ -1,0 +1,183 @@
+/* You can add global styles to this file, and also import other style files */
+.flash-message
+{
+    text-align: center;
+    margin-top: 71px;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    top: 0px;
+}
+.ngx-overlay
+{
+    background-color: rgba(40,40,40,.95)!important;
+}
+vg-player
+{ width: 352px!important;
+    height: 352px!important;
+    float: left;
+    margin: 30px 47px 20px 0;
+}
+@media (min-width: 1200px)
+{
+.container {
+    max-width: 1200px;
+}
+}
+.clear-fix
+{
+    clear: both;
+}
+body.innerpage #footer
+{
+    padding-left: 270px;
+    width: 100%;
+    box-sizing: border-box;
+}body.innerpage #footer .container
+{
+    max-width: 100%;
+}
+body.innerpage #footer ul
+{
+    padding: 0;    margin-left: -12px;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.main-content
+{
+    padding: 72px 0 40px 0;
+    position: relative;
+}
+/*.category-lft
+{
+    float: left;
+    width: 250px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-top: 88px;
+    background-color: #fff;
+    box-shadow: 0 0 2.5em rgba(85,85,85,.5);
+    height: 100%;
+    position: fixed;
+    overflow-y: auto;
+}*/
+.page-content
+{
+    position: relative;
+    padding-left: 270px;
+    width: 100%;
+    box-sizing: border-box;    padding-right: 20px;padding-top: 20px;
+}
+.category-lft ul
+{
+    margin: 0;
+    padding: 0;
+}
+.category-lft ul li
+{
+    list-style: none;float: left;
+    width: 100%;
+}
+.category-lft li a {
+    padding: 8px 5px 8px 8px;
+    font-size: 15px;
+    border-left: 3px solid transparent;
+    color: #666666;
+    border-bottom: 1px solid #f0f0f0;
+    float: left;
+    width: 100%;    color: #4d4a4a;
+    text-transform: uppercase;
+}
+.category-lft li a .fa{
+    padding-right: 6px;
+}
+.category-lft li a:hover{
+    background-color: #1b1b28;color: #fff;
+    text-decoration: none;
+}
+
+.category-lft li.parent-ctg {
+    padding: 10px 25px 10px 15px;
+    font-size: 12px;
+    color: #222d4d;
+    font-size: 15px;
+    
+    background-color: #7d7d8a;color: #fff;
+}
+app-sidebar
+{
+    float: left;
+    width: 250px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-top: 88px;
+    background-color: #fff;
+    box-shadow: 0 0 2.5em rgba(85,85,85,.5);
+    height: 100%;
+    position: fixed;
+    overflow-y: auto;z-index: 99;
+}
+.faq-page .card-header
+{
+    background-color: #f7f7f7;
+    padding: 0;
+    border: 0;
+}
+.faq-page .card-header button{
+    font-size: 15px;
+    line-height: 27px;
+    color: #333;
+    font-weight: 300;
+    float: left;
+    width: 100%;
+    text-align: left;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+}
+.faq-page .card-header button span{
+    padding: 9px 0 9px 18px; float: left;
+    width: 100%;
+    position: relative;
+}
+.faq-page .card-header button span:after{
+    position: absolute;
+    top: 6px;
+    right: 15px;
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f107";
+    font-size: 26px;
+}
+
+.faq-page .card-header button[aria-expanded="true"] span:after{
+    content: "\f106";
+}
+h3.spb_heading.spb_text_heading span {
+    padding: 0 10px;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    background: #ffffff;
+}
+h3.spb_heading.spb_text_heading{
+font-weight: normal;
+margin-top: 0;
+border-bottom: 2px solid transparent;
+position: relative;
+margin-bottom: 20px;
+text-align: center;
+border-bottom-width: 2px;
+padding-bottom: 4px;
+}
+h3.spb_heading.spb_text_heading:before {
+    content: "";
+    display: block;
+    border-top: 2px solid #444;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+}
