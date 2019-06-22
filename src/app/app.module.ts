@@ -3,15 +3,13 @@ import { NgModule } from '@angular/core';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule }   from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
-import { FlashMessagesModule } from 'angular2-flash-messages';
-import { NgxUiLoaderModule, NgxUiLoaderRouterModule } from  'ngx-ui-loader';
-
 
 import {VgCoreModule} from 'videogular2/core';
 import {VgControlsModule} from 'videogular2/controls';
 import {VgOverlayPlayModule} from 'videogular2/overlay-play';
 import {VgBufferingModule} from 'videogular2/buffering';
-import { SidebarModule } from 'ng-sidebar';
+import { NgxUiLoaderModule, NgxUiLoaderRouterModule } from  'ngx-ui-loader';
+import { FlashMessagesModule } from 'angular2-flash-messages';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -31,32 +29,30 @@ import { SpeakerComponent } from './components/speaker/speaker.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    LoginComponent,
-    RegisterComponent,
-    HeaderComponent,
-    FooterComponent,
     CategoryDetailComponent,
-    NotFoundComponent,
     FaqComponent,
+    FooterComponent,
+    HeaderComponent,
+    LoginComponent,
+    NotFoundComponent,
+    RegisterComponent,
     SidebarComponent,
-    TermsPrivacyComponent,
     SpeakerComponent,
-    
+    TermsPrivacyComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FormsModule,
-    ReactiveFormsModule,
-    FlashMessagesModule.forRoot(),
-    NgxUiLoaderModule,
-    NgxUiLoaderRouterModule,
     VgCoreModule,
     VgControlsModule,
     VgOverlayPlayModule,
     VgBufferingModule,
-    SidebarModule.forRoot()
+    NgxUiLoaderModule,
+    NgxUiLoaderRouterModule,
+    FlashMessagesModule.forRoot(),
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
