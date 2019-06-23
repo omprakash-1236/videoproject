@@ -1,8 +1,18 @@
-#header{    box-shadow: 1px 1px 4px rgba(0,0,0,.21);height:90px;padding:13px 0;position:fixed;left:0;top:0;right:0;transition:all .5s;z-index:997;background:#fff;height:70px}
+#header{    box-shadow: 1px 1px 4px rgba(0,0,0,.21);
+    height: 90px;
+    padding: 3px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    transition: all .5s;
+    z-index: 997;
+    background: #fff;
+    height: 52px;}
 #header.header-scrolled,#header.header-fixed{background:rgba(6,12,34,0.98);height:70px;padding:15px 0;transition:all .5s}
 #header #logo h1{font-size:36px;margin:0;padding:6px 0;line-height:1;font-family:"Raleway",sans-serif;font-weight:700;letter-spacing:3px;text-transform:uppercase;    padding-top: 0px;}
 #header #logo h1 span{color:#f82249}
-#header #logo h1 a,#header #logo h1 a:hover{color:#000}
+#header #logo h1 a,#header #logo h1 a:hover{color:#0178b3}
 #header #logo img{padding:0;margin:0;max-height:40px}
 .nav-menu,.nav-menu *{margin:0;padding:0;list-style:none}
 .nav-menu ul{position:absolute;display:none;top:100%;left:0;z-index:99}
@@ -23,7 +33,7 @@
 .nav-menu > li{margin-left:8px}
 .nav-menu > li > a:before{content:"";position:absolute;width:0;height:2px;bottom:0;left:0;background-color:#f82249;visibility:hidden;transition:all .3s ease-in-out 0}
 .nav-menu a:hover:before,.nav-menu li:hover > a:before,.nav-menu .menu-active > a:before{visibility:visible;width:100%}
-.nav-menu li.buy-tickets a{color:#fff;background:#f82249;padding:7px 22px;border-radius:50px;border:2px solid #f82249;transition:all ease-in-out .3s;font-weight:500;margin-left:8px;margin-top:2px;line-height:1;font-size:13px}
+.nav-menu li.buy-tickets a{color:#fff;background:#0178b3;padding:7px 22px;border-radius:50px;border:2px solid #0178b3;transition:all ease-in-out .3s;font-weight:500;margin-left:8px;margin-top:2px;line-height:1;font-size:13px}
 
 .nav-menu li.buy-tickets:hover a:before,.nav-menu li.buy-tickets.menu-active a:before{visibility:hidden}
 .nav-menu ul{margin:4px 0 0;padding:10px;box-shadow:0 0 30px rgba(127,137,161,0.25);background:#fff;border-radius:3px}

@@ -24,6 +24,12 @@ import { FaqComponent } from './components/faq/faq.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { TermsPrivacyComponent } from './components/terms-privacy/terms-privacy.component';
 import { SpeakerComponent } from './components/speaker/speaker.component';
+import { WeComponent } from './components/we/we.component';
+import { TrainingOptionComponent } from './components/training-option/training-option.component';
+import { PrivacyPolicyComponent } from './components/privacy-policy/privacy-policy.component';
+import { RefundCancellationComponent } from './components/refund-cancellation/refund-cancellation.component';
+import { AntiSpamComponent } from './components/anti-spam/anti-spam.component';
+import { DisclaimerComponent } from './components/disclaimer/disclaimer.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +44,13 @@ import { SpeakerComponent } from './components/speaker/speaker.component';
     RegisterComponent,
     SidebarComponent,
     SpeakerComponent,
-    TermsPrivacyComponent
+    TermsPrivacyComponent,
+    WeComponent,
+    TrainingOptionComponent,
+    PrivacyPolicyComponent,
+    RefundCancellationComponent,
+    AntiSpamComponent,
+    DisclaimerComponent
   ],
   imports: [
     BrowserModule,

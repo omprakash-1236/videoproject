@@ -7,6 +7,12 @@ import { CategoryDetailComponent } from './components/category-detail/category-d
 import { FaqComponent } from './components/faq/faq.component';
 import { TermsPrivacyComponent } from './components/terms-privacy/terms-privacy.component';
 import { SpeakerComponent } from './components/speaker/speaker.component';
+import { WeComponent } from './components/we/we.component';
+import { TrainingOptionComponent } from './components/training-option/training-option.component';
+import { PrivacyPolicyComponent } from './components/privacy-policy/privacy-policy.component';
+import { RefundCancellationComponent } from './components/refund-cancellation/refund-cancellation.component';
+import { AntiSpamComponent } from './components/anti-spam/anti-spam.component';
+import { DisclaimerComponent } from './components/disclaimer/disclaimer.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 
 const routes: Routes = [
@@ -15,8 +21,14 @@ const routes: Routes = [
   {path:'register',component:RegisterComponent},
   {path:'category',component:CategoryDetailComponent},
   {path:'faq',component:FaqComponent},
-  {path:'terms-and-privacy',component:TermsPrivacyComponent},
+  {path:'terms',component:TermsPrivacyComponent},
   {path:'speaker',component:SpeakerComponent},
+  {path:'we',component:WeComponent},
+  {path:'training-option',component:TrainingOptionComponent},
+  {path:'privacy-policy',component:PrivacyPolicyComponent},
+  {path:'refund-cancellation',component:RefundCancellationComponent},
+  {path:'anti-spam-policy',component:AntiSpamComponent},
+  {path:'disclaimer',component:DisclaimerComponent},
   {path:'**',component:NotFoundComponent},
 ];
 

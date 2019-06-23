@@ -1,19 +1,23 @@
 <div class="category-lft">
     <ul>
-        <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
-        <li><a href="#"><i class="fa fa-usd" aria-hidden="true"></i> Freebie</a></li>
-        <li class="parent-ctg">Category</li>
-        <li><a href="#"><i class="fa fa-clipboard" aria-hidden="true"></i> HR & Payroll</a></li>
-        <li><a href="#"><i class="fa fa-money" aria-hidden="true"></i> Finance</a></li>
-        <li><a href="#"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Education</a></li>
-        <li><a href="#"><i class="fa fa-truck" aria-hidden="true"></i> Transportation</a></li>
-        <li><a href="#"><i class="fa fa-truck" aria-hidden="true"></i> Logistics</a></li>
-        <li><a href="#"><i class="fa fa-flask" aria-hidden="true"></i> Chemical</a></li>
-        <li><a href="#"><i class="fa fa-university" aria-hidden="true"></i> Banking</a></li>
-        <li><a href="#"><i class="fa fa-medkit" aria-hidden="true"></i> Insurance</a></li>
+        <li><a [routerLink]="['']"><i class="fa fa-home"></i> Home</a></li>
+        <li class="parent-ctg">Webinar</li>
+        <li><a href="#"><i class="fa fa-clipboard" aria-hidden="true"></i>Today</a></li>
+        <li><a href="#"><i class="fa fa-money" aria-hidden="true"></i> This Week</a></li>
+        <li class="parent-ctg">Industry</li>
+        <li><a [routerLink]="['../category']"><i class="fa fa-clipboard" aria-hidden="true"></i> HR & Payroll</a></li>
+        <li><a [routerLink]="['../category']"><i class="fa fa-money" aria-hidden="true"></i> Finance</a></li>
+        <li><a [routerLink]="['../category']"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Education</a></li>
+        <li><a [routerLink]="['../category']"><i class="fa fa-truck" aria-hidden="true"></i> Transportation</a></li>
+        <li><a [routerLink]="['../category']"><i class="fa fa-truck" aria-hidden="true"></i> Logistics</a></li>
+        <li><a [routerLink]="['../category']"><i class="fa fa-flask" aria-hidden="true"></i> Chemical</a></li>
+        <li><a [routerLink]="['../category']"><i class="fa fa-university" aria-hidden="true"></i> Banking</a></li>
+        <li><a [routerLink]="['../category']"><i class="fa fa-medkit" aria-hidden="true"></i> Insurance</a></li>
         <li class="parent-ctg">Speaker Dashboard</li>
-        <li><a href=""><i class="fa fa-lock" aria-hidden="true"></i> Sign In</a></li>
-        <li><a href=""><i class="fa fa-user-plus"></i> Join Us</a></li>
+
+        <li><a [routerLink]="['../speaker']">View All</a></li>
+        <li><a href="#"><i class="fa fa-lock" aria-hidden="true"></i> Sign In</a></li>
+        <li><a href="#"><i class="fa fa-user-plus"></i>Speaking Opportunity</a></li>
     </ul>
 
    </div> 

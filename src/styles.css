@@ -181,3 +181,32 @@ h3.spb_heading.spb_text_heading:before {
     top: 50%;
     z-index: 1;
 }
+.cat-detail .tab-content
+{
+    box-shadow: 0 0 10px rgba(187,187,187,.3);
+    background: #fff;
+    padding: 17px 20px;    min-height: 500px;
+}
+.cat-detail .nav-link {
+    display: block;
+    padding: 5px 23px;
+}
+.cat-detail .nav-tabs .nav-item.show .nav-link,.cat-detail .nav-tabs .nav-link.active {
+    color: #fff;
+    background-color: #0178b3;
+    border-color: #0178b3 #dee2e6 #fff;
+}
+.cat-detail .nav-tabs .nav-link:focus,.cat-detail .nav-tabs .nav-link:hover
+{
+    color: #fff;
+    background-color: #f82249;
+    border-color: #f82249 #dee2e6 #fff;
+}
+img{
+    max-width: 100%;
+}
+.heading
+{
+    font-size: 17px;
+    font-weight: 600;
+}
