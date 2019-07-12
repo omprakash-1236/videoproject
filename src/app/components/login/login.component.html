@@ -1,18 +1,18 @@
 <div class="main-content">
-    <app-sidebar></app-sidebar>   
+
 
     <div class="page-content">
-      
+
       <div class="login-screen">
-  
+
   <div class="row">
-    <div class="col-sm-11 col-md-9 col-lg-7 mx-auto">
-      <div class="card card-signin my-5">
+    <div class="col-sm-11 col-md-9 col-lg-6 mx-auto">
+      <div class="card card-signin my-2">
         <div class="card-body">
           <h5 class="card-title text-center">Sign In</h5>
           <form class="form-signin" #myform="ngForm" (ngSubmit)="login(myform)">
             <div class="form-label-group form-group">
-              <input type="email" id="email" name="email" class="form-control" 
+              <input type="email" id="email" name="email" class="form-control"
                placeholder="Email address"
                [(ngModel)]="email"
                #loginEmail="ngModel"
@@ -51,6 +51,95 @@
         </div>
       </div>
     </div>
+
+
+    <div class="col-sm-11 col-md-9 col-lg-6 mx-auto">
+        <div class="card card-signin my-2">
+          <div class="card-body">
+            <h5 class="card-title text-center">Sign Up</h5>
+            <form class="form-signin" #myform="ngForm" (ngSubmit)="register(myform)">
+              <div class="form-label-group form-group">
+                <input type="fullname" id="fullname" name="fullname" class="form-control"
+                 placeholder="Full Name"
+                 [(ngModel)]="fullname"
+                 #registerFullname="ngModel"
+                 [ngClass]="{'is-invalid':registerFullname.errors && registerFullname.touched}"
+                 required
+
+                 >
+                <label for="fullname">Full Name</label>
+
+                <div [hidden]="!registerFullname.errors?.required" class="invalid-feedback">Full Name Required</div>
+
+              </div>
+
+              <div class="form-label-group form-group">
+                  <input type="email" id="email2" name="email2" class="form-control"
+                   placeholder="Email address"
+                   [(ngModel)]="email2"
+                   #loginEmail2="ngModel"
+                   [ngClass]="{'is-invalid':loginEmail2.errors && loginEmail2.touched}"
+                   required
+                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                   >
+                  <label for="email2">Email address</label>
+
+                  <div [hidden]="!loginEmail2.errors?.required" class="invalid-feedback">Email Required</div>
+                  <div [hidden]="!loginEmail2.errors?.pattern" class="invalid-feedback">Email Invalid</div>
+                </div>
+
+                <div class="form-label-group form-group">
+                    <input type="tel" id="phone" name="phone" class="form-control" placeholder="Phone No"
+                    [(ngModel)]="phone"
+                    #loginPhone="ngModel"
+                    [ngClass]="{'is-invalid':loginPhone.errors && loginPhone.touched}"
+                    minlength="10"
+                    required>
+                    <label for="phone">Phone</label>
+
+                    <div [hidden]="!loginPhone.errors?.required" class="invalid-feedback">Phone No Required</div>
+                    <div [hidden]="!loginPhone.errors?.minlength" class="invalid-feedback">10 Digits Phone No</div>
+                  </div>
+
+
+                  <div class="form-label-group form-group">
+                      <input type="jobtitle" id="jobtitle" name="jobtitle" class="form-control"
+                       placeholder="Job Title"
+                       [(ngModel)]="jobtitle"
+                       #registerjobtitle="ngModel"
+                       [ngClass]="{'is-invalid':registerjobtitle.errors && registerjobtitle.touched}"
+                       required
+
+                       >
+                      <label for="jobtitle">Job Title</label>
+
+                      <div [hidden]="!registerjobtitle.errors?.required" class="invalid-feedback">Job Title Required</div>
+
+                    </div>
+
+              <div class="form-label-group form-group">
+                <input type="password" id="password2" name="password2" class="form-control" placeholder="Password"
+                [(ngModel)]="password2"
+                #loginPassword2="ngModel"
+                [ngClass]="{'is-invalid':loginPassword2.errors && loginPassword2.touched}"
+                minlength="6"
+                required>
+                <label for="password2">Password</label>
+
+                <div [hidden]="!loginPassword2.errors?.required" class="invalid-feedback">Password Required</div>
+                <div [hidden]="!loginPassword2.errors?.minlength" class="invalid-feedback">Password minimum 6 character</div>
+              </div>
+
+
+              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Register</button>
+
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+
   </div>
 </div>
 </div>

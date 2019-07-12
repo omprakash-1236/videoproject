@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule }   from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { SidebarModule } from 'ng-sidebar';
 
 import {VgCoreModule} from 'videogular2/core';
 import {VgControlsModule} from 'videogular2/controls';
@@ -65,6 +66,7 @@ import { DisclaimerComponent } from './components/disclaimer/disclaimer.componen
     FlashMessagesModule.forRoot(),
     FormsModule,
     ReactiveFormsModule,
+    SidebarModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

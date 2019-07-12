@@ -19,9 +19,10 @@
 .conf-title
 {
     font-weight: 600;
-    color: #f82249;
+    color: #0178b3;
     line-height: 21px;
-    padding-bottom: 11px;
+    padding-bottom: 3px;
+    margin-top: 8px;
 }
 
 .speaker-image img{
@@ -34,7 +35,7 @@
     font-weight: 600;
     color: #4d4a4a;
     font-size: 17px;
-    padding-top: 21px;
+    padding-top: 4px;
 }
 .speaker-dsg
 {
@@ -51,7 +52,7 @@
 }
 .btn-group 
 {
-    padding-top: 12px;
+    padding-top: 12px;margin-bottom:5px;
 }
 .conf-date
 {

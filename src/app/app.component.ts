@@ -11,6 +11,16 @@ export class AppComponent {
   previousUrl: string;
   innerpage:string='innerpage';
 
+  private _opened: boolean = false;
+  private _modeNum: number = 1;
+  private _MODES: Array<string> = ['over', 'push', 'slide'];
+  toggleSidebar() {
+    this._opened = !this._opened;
+    if (this._modeNum === this._MODES.length) {
+      this._modeNum = 1;
+    }    
+  }
+
   constructor(private renderer: Renderer2, private router: Router) {
     this.router.events
     .subscribe((event) => {

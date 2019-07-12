@@ -30,7 +30,7 @@ vg-player
 }
 body.innerpage #footer
 {
-    padding-left: 270px;
+    padding-left: 15px;
     width: 100%;
     box-sizing: border-box;
 }body.innerpage #footer .container
@@ -43,10 +43,12 @@ body.innerpage #footer ul
 }
 body{
     font-family: 'Open Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;    color: #616467;
 }
 .main-content
 {
-    padding: 72px 0 40px 0;
+   /* padding: 72px 0 40px 0;*/
     position: relative;
 }
 /*.category-lft
@@ -66,7 +68,8 @@ body{
 .page-content
 {
     position: relative;
-    padding-left: 270px;
+    /*padding-left: 270px;*/
+    padding-left: 20px;
     width: 100%;
     box-sizing: border-box;    padding-right: 20px;padding-top: 20px;
 }
@@ -88,7 +91,8 @@ body{
     border-bottom: 1px solid #f0f0f0;
     float: left;
     width: 100%;    color: #4d4a4a;
-    text-transform: uppercase;
+    text-transform: uppercase;font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
 }
 .category-lft li a .fa{
     padding-right: 6px;
@@ -124,13 +128,13 @@ app-sidebar
 {
     background-color: #f7f7f7;
     padding: 0;
-    border: 0;
+    border: 0;box-shadow: 0 0 23px -3px #ccc;
 }
 .faq-page .card-header button{
     font-size: 15px;
     line-height: 27px;
     color: #333;
-    font-weight: 300;
+    font-weight: 500;
     float: left;
     width: 100%;
     text-align: left;
@@ -209,4 +213,52 @@ img{
 {
     font-size: 17px;
     font-weight: 600;
+}
+
+
+body, html {
+    height: 100%;
+    width: 100%;
+}   
+.ng-sidebar--left
+{
+    width: 250px;
+}
+.page-content
+{
+    padding-top: 70px;
+}
+.ng-sidebar
+{
+    z-index: 995!important;
+}
+app-sidebar
+{
+    padding-top: 56px;
+}
+.toggle-btn
+{
+    position: fixed;
+    top: 10px;
+    left: 26px;
+    z-index: 999;
+    cursor: pointer;
+}
+.toggle-btn .fa{
+    font-size: 27px;
+    color: #0178b3;
+}
+.category-lft li a:focus
+{
+    outline: none;
+}
+
+body .ng-sidebar,.toggle-btn
+{
+    display: none;
+    padding-left: 0!important;
+}
+body.innerpage .ng-sidebar,body.innerpage .toggle-btn
+{
+    display: block;
 }
