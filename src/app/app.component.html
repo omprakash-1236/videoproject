@@ -1,23 +1,23 @@
-<app-header>
-      
+<!--<app-header *ngIf="!router.url.includes('category')">-->
+    <app-header>
 </app-header>
 <flash-messages></flash-messages>
 <ngx-ui-loader></ngx-ui-loader>
 
 
-        <ng-sidebar-container>    
+        <ng-sidebar-container>
                 <!-- A sidebar -->
                 <ng-sidebar [(opened)]="_opened" [mode]="_MODES[_modeNum]">
                   <app-sidebar></app-sidebar>
-                 
+
                 </ng-sidebar>
                 <div ng-sidebar-content>
-<router-outlet>  </router-outlet><a class="toggle-btn" (click)="toggleSidebar()"><i class="fa fa-bars"></i></a> 
+<router-outlet>  </router-outlet><a class="toggle-btn" (click)="toggleSidebar()"><i class="fa fa-bars"></i></a>
 <app-footer></app-footer>  </div>
 
-    
+
 </ng-sidebar-container>
   <div class="clear-fix"></div>
-    
+
 
 

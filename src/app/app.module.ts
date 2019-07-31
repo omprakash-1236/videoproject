@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import { FormsModule }   from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SidebarModule } from 'ng-sidebar';
 
@@ -9,7 +9,7 @@ import {VgCoreModule} from 'videogular2/core';
 import {VgControlsModule} from 'videogular2/controls';
 import {VgOverlayPlayModule} from 'videogular2/overlay-play';
 import {VgBufferingModule} from 'videogular2/buffering';
-import { NgxUiLoaderModule, NgxUiLoaderRouterModule } from  'ngx-ui-loader';
+import { NgxUiLoaderModule, NgxUiLoaderRouterModule } from 'ngx-ui-loader';
 import { FlashMessagesModule } from 'angular2-flash-messages';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -31,6 +31,15 @@ import { PrivacyPolicyComponent } from './components/privacy-policy/privacy-poli
 import { RefundCancellationComponent } from './components/refund-cancellation/refund-cancellation.component';
 import { AntiSpamComponent } from './components/anti-spam/anti-spam.component';
 import { DisclaimerComponent } from './components/disclaimer/disclaimer.component';
+import { SpeakerDetailComponent } from './components/speaker-detail/speaker-detail.component';
+import { ProduuctDetailComponent } from './components/produuct-detail/produuct-detail.component';
+import { CustomerQuesAnsComponent } from './components/speaker-dashboard/customer-ques-ans/customer-ques-ans.component';
+import { BookComponent } from './components/speaker-dashboard/book/book.component';
+import { BlogComponent } from './components/speaker-dashboard/blog/blog.component';
+import { WebinarComponent } from './components/speaker-dashboard/webinar/webinar.component';
+import { SpeakerHomeComponent } from './components/speaker-dashboard/speaker-home/speaker-home.component';
+import { SeriesComponent } from './components/speaker-dashboard/series/series.component';
+import { MysaleComponent } from './components/speaker-dashboard/mysale/mysale.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +60,16 @@ import { DisclaimerComponent } from './components/disclaimer/disclaimer.componen
     PrivacyPolicyComponent,
     RefundCancellationComponent,
     AntiSpamComponent,
-    DisclaimerComponent
+    DisclaimerComponent,
+    SpeakerDetailComponent,
+    ProduuctDetailComponent,
+    CustomerQuesAnsComponent,
+    BookComponent,
+    BlogComponent,
+    WebinarComponent,
+    SpeakerHomeComponent,
+    SeriesComponent,
+    MysaleComponent,
   ],
   imports: [
     BrowserModule,

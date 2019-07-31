@@ -1,0 +1,191 @@
+.cat-detail h2{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  font-family: 'Lato', sans-serif;font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+}
+.cat-detail p{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+}
+.conf-box
+{
+  box-shadow: 0 0 10px rgba(187,187,187,.3);
+  background: #fff;
+  padding: 10px;    margin: 10px 0 20px 0;    box-shadow: 0 0 23px -3px #ccc;
+}
+.conf-title
+{
+  font-weight: 600;
+  color: #2196f3;
+  line-height: 21px;
+  padding-bottom: 11px;
+}
+
+.speaker-image img{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+.speaker-name
+{
+  font-weight: 600;
+  color: #4d4a4a;
+  font-size: 17px;
+  padding-top: 21px;
+}
+.speaker-dsg
+{
+  font-weight: 500;color: #4d4a4a; font-size: 15px;
+}
+.btn-group .btn-primary {
+  color: #fff;
+  background-color: #0178b3;
+  border-color: #0178b3;
+  margin-left: 4px!important;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 5px!important;
+}
+.btn-group
+{
+  padding-top: 12px;
+  float: right;
+}
+.conf-date
+{
+  font-size: 15px;
+  padding-top: 8px;
+}
+.conf-time,.days-lft
+{
+  font-size: 14px;
+  padding-top: 8px;
+}
+.days-lft
+{
+  padding-top: 14px;
+  font-size: 20px;
+  color: #0178b3;
+  font-weight: 500;
+}
+.speaker-bio
+{
+  box-shadow: 0 0 10px rgba(187,187,187,.3);
+  background: #fff;
+  padding: 10px 15px;
+  margin-bottom: 35px;
+  float: left;
+  width: 100%;
+  position: relative;
+  min-height: 230px;
+}
+.speaker-txt
+{
+  padding-left: 200px;
+  position: relative;    min-height: 230px;
+}
+.speaker-img
+{
+  position: absolute;
+    left: 6px;
+    top: 22px;
+    width: 200px;    text-align: center;
+}
+.speaker-img img
+{
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+ngb-tabset
+{
+  clear: both;
+  float: left;
+  width: 100%;
+}
+.cat-detail .speaker-img h2{
+  font-weight: 600;
+  color: #2196f3;
+  font-size: 17px;
+  padding-top: 8px;
+}
+.cat-detail .speaker-img h3{
+  font-weight: 500;
+  color: #4d4a4a;
+  font-size: 15px;
+}
+.cl
+{
+  clear: both;
+}
+.share-cnf span{
+  float:right;
+  margin-left: 15px;
+}
+.share-cnf
+{
+  position: absolute;
+  bottom: 20px;
+  right:0;
+}
+.conf-price {
+  box-shadow: 0 0 10px rgba(187,187,187,.3);
+  background: #fff;
+  padding: 10px 15px;
+  margin-bottom: 35px;
+  float: left;
+  width: 100%;
+  position: relative;
+  min-height: 250px;
+}
+.buy-option,.rent-option,.note-option
+{
+  float: left;
+  margin-right: 4%;
+  width:48%;
+  margin-top: 15px;
+}
+.rent-option
+{
+  margin-right: 0;
+}
+.note-option
+{margin-right: 0;width: 100%;
+  
+
+}
+.conf-price h3
+{
+  font-size: 19px;
+    color: #0178b3;
+}
+.conf-price ul
+{
+  padding: 0;
+  margin: 0;
+}
+.conf-price ul li
+{
+  list-style: none;
+}
+.conf-dtl
+{
+  padding-bottom: 30px;
+}
+.conf-dtl-rft ul
+{
+  margin: 0;
+  padding: 0;
+}
+.conf-dtl-rft ul li
+{
+  border:solid 1px #ccc;
+  padding: 5px;
+  border-radius: 10px;
+  list-style: none;
+  margin-bottom: 10px;
+}

@@ -262,3 +262,103 @@ body.innerpage .ng-sidebar,body.innerpage .toggle-btn
 {
     display: block;
 }
+.subheader
+{
+    display: none;
+}
+.common .subheader
+{
+    display: block;
+    width:100%;
+    text-align: center;
+    margin-top: 75px;
+}
+.common .subheader li{
+    display: inline-block;
+    padding: 0 20px!important;
+    float: none!important;
+}
+.common .subheader li a{
+    border: solid 1px #ccc;
+    padding: 5px 24px 6px 24px!important;
+    line-height: 27px;
+    border-radius: 10px;
+}
+.common .subheader li a:hover{
+    text-decoration: none!important;
+}
+.common .subheader li:hover a::before{
+    display: none;
+}
+
+.class2
+{
+    display: none;
+}
+.common .class1,.common .toggle-btn
+{
+    display: none!important;
+}
+.common .class2
+{
+    display: block!important;
+}
+.common .page-content {
+    padding-top: 30px;
+}
+.common .subheader li.active a{
+    background: #0178b3;
+    color: #fff;
+    text-decoration: none!important;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #0178b3;
+    border-color: #0178b3;
+}
+.cl
+{
+    clear: both;
+}
+.common-cont-dash{
+    box-shadow: 0 0 10px rgba(187,187,187,.3);
+    background: #fff;
+    padding: 17px 20px;
+    float: left;
+    min-height: 500px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.border {
+    border: 1px solid #866969!important;
+    padding: 4px 7px;
+    border-radius: 7px;
+    color: #524b4b;
+    font-size: 13px;
+}
+.nav-item.dropdown:hover .dropdown-menu
+{
+display: block;
+}
+.nav-item.dropdown:hover .dropdown-menu a
+{
+    display: block;
+}
+.nav-item.dropdown .dropdown-menu
+{
+    left: inherit!important;
+    right: 0;
+}
+.common .page-content
+{
+    padding-left:  0!important;
+}
+.common .ng-sidebar__content,.homeppage .ng-sidebar__content
+{
+    padding-left:  0!important;
+}
+.common app-sidebar,.homeppage app-sidebar
+{
+    width: 0;
+}

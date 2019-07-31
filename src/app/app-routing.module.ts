@@ -14,6 +14,16 @@ import { RefundCancellationComponent } from './components/refund-cancellation/re
 import { AntiSpamComponent } from './components/anti-spam/anti-spam.component';
 import { DisclaimerComponent } from './components/disclaimer/disclaimer.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { SpeakerDetailComponent } from './components/speaker-detail/speaker-detail.component';
+import { ProduuctDetailComponent } from './components/produuct-detail/produuct-detail.component';
+import { CustomerQuesAnsComponent } from './components/speaker-dashboard/customer-ques-ans/customer-ques-ans.component';
+import { BookComponent } from './components/speaker-dashboard/book/book.component';
+import { BlogComponent } from './components/speaker-dashboard/blog/blog.component';
+import { WebinarComponent } from './components/speaker-dashboard/webinar/webinar.component';
+import { SpeakerHomeComponent } from './components/speaker-dashboard/speaker-home/speaker-home.component';
+import { SeriesComponent } from './components/speaker-dashboard/series/series.component';
+import { MysaleComponent } from './components/speaker-dashboard/mysale/mysale.component';
+
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
@@ -29,6 +39,18 @@ const routes: Routes = [
   {path:'refund-cancellation',component:RefundCancellationComponent},
   {path:'anti-spam-policy',component:AntiSpamComponent},
   {path:'disclaimer',component:DisclaimerComponent},
+  {path : 'speakerdetail',component:SpeakerDetailComponent},
+  {path : 'product-detail',component:ProduuctDetailComponent},
+  {path : 'speaker-dashboard',component:CustomerQuesAnsComponent},
+  
+    { path: 'ques-answer', component: CustomerQuesAnsComponent },
+    { path: 'book', component: BookComponent },
+    { path: 'blog', component: BlogComponent },
+    { path: 'mywebinar', component: WebinarComponent },
+    { path: 'series', component: SeriesComponent },
+    { path: 'my-sale', component: MysaleComponent },
+ 
+
   {path:'**',component:NotFoundComponent},
 ];
 

@@ -10,15 +10,15 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  Email:string = "om@gmail.com";
-  Password:string ="123456"
+  Email: string = "om@gmail.com";
+  Password:string ='123456'
   credentials:Credentials;
 
   constructor(private flashMessagesService: FlashMessagesService,private ngxService: NgxUiLoaderService,private router: Router) { }
 
   ngOnInit() {
 
-    
+
   }
 
   login({ value, valid }: { value: Credentials, valid: boolean }) {
@@ -27,22 +27,22 @@ export class LoginComponent implements OnInit {
     }*/
     if(!valid || value.email!=this.Email || value.password!=this.Password)
     {
-      this.ngxService.start(); 
+      this.ngxService.start();
       setTimeout(() => {
-      this.ngxService.stop(); 
+      this.ngxService.stop();
     }, 500);
 
       this.flashMessagesService.show('Authentication Fail', { cssClass: 'alert-danger',timeout: 1500 });
     }
-    if(valid && value.email==this.Email && value.password==this.Password)
+    if(valid && value.email === this.Email && value.password === this.Password)
     {
-      this.ngxService.start(); 
+      this.ngxService.start();
       setTimeout(() => {
-      this.ngxService.stop(); 
+      this.ngxService.stop();
     }, 500);
 
-      this.flashMessagesService.show('You have login successfully ', { cssClass: 'alert-success',timeout: 2500 });     
-        this.router.navigate(['dashboard']);
+      this.flashMessagesService.show('You have login successfully ', { cssClass: 'alert-success',timeout: 2500 });
+      this.router.navigate(['dashboard']);
     }
   }
 

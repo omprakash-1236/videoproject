@@ -35,12 +35,44 @@
     </div>
 
     <nav id="nav-menu-container">
-      <ul class="nav-menu">
+      <ul class="nav-menu class1">
         <li><a [routerLink]="['we']">We</a></li>
         <li><a [routerLink]="['training-option']">Training Option</a></li>
         <li><a [routerLink]="['faq']">FAQ's</a></li>
         <li class="buy-tickets"><a [routerLink]="['login']">Sign In/Register</a></li>
       </ul>
+
+
+      <ul class="nav-menu class2">
+        <li><a [routerLink]="['my-sale']">My Sell</a></li>
+        <li><a href="javascript:;">Payment</a></li>
+        <li><a href="javascript:;">Notification</a></li>
+        
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="javascript:;" id="navbardrop" data-toggle="dropdown">
+                Hello ! Om
+            </a>
+            <div class="dropdown-menu">
+               <a href="javascript:;">Profile</a>
+               <a href="javascript:;">Contract</a>
+               <a href="javascript:;">LogOut</a>
+            </div>
+          </li>
+      </ul>
+
+
+
     </nav><!-- #nav-menu-container -->
   </div>
 </header><!-- #header -->
+
+<div class="subheader">
+  <ul class="nav-menu">
+    <li [routerLinkActive]="['active']"><a [routerLink]="['ques-answer']">Customer Q&A</a></li>
+    <li [routerLinkActive]="['active']"><a [routerLink]="['book']">Book</a></li>
+    <li [routerLinkActive]="['active']"><a [routerLink]="['blog']">Blog</a></li>
+    <li [routerLinkActive]="['active']"><a href="javascript:;">Email</a></li>
+    <li [routerLinkActive]="['active']"><a [routerLink]="['mywebinar']">Webinar</a></li>
+    <li [routerLinkActive]="['active']"><a [routerLink]="['series']">Series</a></li>
+  </ul>
+</div>

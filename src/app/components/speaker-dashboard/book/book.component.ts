@@ -1,22 +1,22 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-book',
+  templateUrl: './book.component.html',
+  styleUrls: ['./book.component.css']
 })
-export class HomeComponent implements OnInit {
+export class BookComponent implements OnInit {
 
   constructor() { }
 
   ngOnInit(): void {
     const body = document.getElementsByTagName('body')[0];
-    body.classList.add('homeppage');
+    body.classList.add('common');
   }
 
   ngOnDestroy(): void {
     const body = document.getElementsByTagName('body')[0];
-    body.classList.remove('homeppage');
+    body.classList.remove('common');
   }
 
 }
